@@ -14,6 +14,7 @@ sass:
   style: compressed
 plugins:
   - jekyll-redirect-from
+  - jekyll-include-cache
 
 kramdown:
   auto_ids: true

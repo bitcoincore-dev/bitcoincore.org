@@ -1,16 +1,20 @@
-source 'https://rubygems.org'
+# frozen_string_literal: true
 
-## This version should match the version in Debian Stable.
-## If you update the version here, also update it in .ruby-version, .travis.yml
-## and README.md. Then push your branch and make sure Travis supports that
-## version.
-ruby '2.5.1'
+source "https://rubygems.org"
 
-## If you add a new Gem below, run `bundle install` to install it.
-group :development do
-  gem 'github-pages'
-end
+gem "github-pages", group: :jekyll_plugins
 
-group :testing do
-  gem 'html-proofer'
-end
+# Whitelisted plugins not included in runtime dependencies.
+gem "jekyll"
+gem "jekyll-octicons"
+gem "minimal-mistakes-jekyll"
+gem "jemoji"
+gem "jekyll-github-metadata"
+gem "jekyll-theme-cayman"
+gem "liquid-c"
+
+#group :test do
+#  gem "rubocop", "~> 0.79"
+#  gem "rubocop-performance"
+#  gem "webmock"
+#end
